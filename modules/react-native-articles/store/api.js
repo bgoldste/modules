@@ -1,7 +1,12 @@
 import axios from "axios"
+import { getGlobalOptions, getOptions } from "@options";
+
+const global = getGlobalOptions();
+const options = getOptions();
+const BASE_URL = global.url + options.path;
 
 const articlesAPI = axios.create({
-  baseURL: "https://app.botics.co/modules/articles",
+  baseURL: BASE_URL,
   headers: {
     Accept: "application/json",
     "Content-Type": "application/json"

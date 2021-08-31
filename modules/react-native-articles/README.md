@@ -2,7 +2,7 @@
 
 ## Setup
 
-Open `modules/articles/store/api.js` and update the `baseURL` with your application's URL followed by `/modules/articles` which is the endpoint (ie. demo0122202101-24002.botics.com/modules/articles). The initial piece is your project name and the numeric piece is your project number.
+To set up the articles module, you only need to make sure that your BASE_URL is set in your global options folder, which is located at `options/options.js`. From there, the module will configure itself to point at the appropriate endpoint, which is the BASE_URL + the module path. If you would like to set a custom path, you can do so by changing the path value in the Articles module file, which is located at `articles/options.js`.
 
 ## Manual Setup
 
